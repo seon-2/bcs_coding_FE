@@ -1,0 +1,11 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+}
+
+@media (min-width: 768px) {
+  .box {
+    background-color: skyblue;
+  }
+}

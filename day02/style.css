@@ -1,0 +1,66 @@
+img {
+  width: 108px;
+}
+
+button {
+  background-color: white;
+  border: 0;
+  color: #222222;
+  font-weight: 600;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  display: none;
+}
+
+.login {
+  display: inline-block;
+
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 9999px;
+  font-size: 14px;
+  padding: 8px 16px;
+}
+
+body {
+  margin: 0; /* 공백 사라짐 */
+}
+
+header {
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.firstBtn {
+  margin-left: 80px;
+}
+
+.loginBox {
+  display: flex;
+  align-items: center;
+}
+
+.ellipsis {
+  width: 24px;
+  margin-left: 16px;
+}
+
+@media (min-width: 1024px) {
+  button {
+    display: inline-block;
+  }
+
+  .ellipsis {
+    display: none;
+  }
+
+  .login {
+    color: #737373;
+    font-size: 16px;
+    border: 0;
+    padding: 0;
+  }
+}
