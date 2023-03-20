@@ -1,3 +1,30 @@
+$offBlack: #253342;
+$rosePink: #ebb8dd;
+$darkRed: #bf2c34;
+$seaGreen: #53bda5;
+$lightGray: #cbd6e2;
+$magenta: #be398d;
+
 h1 {
   background-color: pink;
+}
+
+h2 {
+  background-color: $rosePink;
+}
+
+h3 {
+  background-color: $darkRed;
+}
+
+h4 {
+  background-color: $seaGreen;
+}
+
+h5 {
+  background-color: $lightGray;
+}
+
+h6 {
+  background-color: $magenta;
 }
