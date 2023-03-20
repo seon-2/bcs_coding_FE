@@ -5,26 +5,30 @@ $seaGreen: #53bda5;
 $lightGray: #cbd6e2;
 $magenta: #be398d;
 
-h1 {
-  background-color: pink;
-}
+div {
+  h1 {
+    background-color: pink;
+  }
 
-h2 {
-  background-color: $rosePink;
-}
+  a {
+    h6 {
+      background-color: $magenta;
+    }
+  }
 
-h3 {
-  background-color: $darkRed;
-}
+  h2 {
+    background-color: $rosePink;
+  }
 
-h4 {
-  background-color: $seaGreen;
-}
+  h3 {
+    background-color: $darkRed;
+  }
 
-h5 {
-  background-color: $lightGray;
-}
+  h4 {
+    background-color: $seaGreen;
+  }
 
-h6 {
-  background-color: $magenta;
+  h5 {
+    background-color: $lightGray;
+  }
 }
