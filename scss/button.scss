@@ -1,0 +1,7 @@
+@mixin btnStyle($color: darkgray) {
+  background-color: $color;
+  color: whitesmoke;
+  border: 0;
+  border-radius: 12px;
+  padding: 12px;
+}

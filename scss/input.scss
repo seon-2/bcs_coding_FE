@@ -1,29 +1,13 @@
-@use "color";
+@import "button";
 
-div {
-  h1 {
-    background-color: color.$magenta;
-  }
+.info {
+  @include btnStyle;
+}
 
-  a {
-    h6 {
-      background-color: color.$magenta;
-    }
-  }
+.alert {
+  @include btnStyle($color: darkRed);
+}
 
-  h2 {
-    background-color: color.$rosePink;
-  }
-
-  h3 {
-    background-color: color.$darkRed;
-  }
-
-  h4 {
-    background-color: color.$seaGreen;
-  }
-
-  h5 {
-    background-color: color.$lightGray;
-  }
+.success {
+  @include btnStyle($color: darkGreen);
 }
