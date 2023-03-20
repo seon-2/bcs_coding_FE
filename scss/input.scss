@@ -1,29 +1,29 @@
-@import "color";
+@use "color";
 
 div {
   h1 {
-    background-color: $magenta;
+    background-color: color.$magenta;
   }
 
   a {
     h6 {
-      background-color: $magenta;
+      background-color: color.$magenta;
     }
   }
 
   h2 {
-    background-color: $rosePink;
+    background-color: color.$rosePink;
   }
 
   h3 {
-    background-color: $darkRed;
+    background-color: color.$darkRed;
   }
 
   h4 {
-    background-color: $seaGreen;
+    background-color: color.$seaGreen;
   }
 
   h5 {
-    background-color: $lightGray;
+    background-color: color.$lightGray;
   }
 }
