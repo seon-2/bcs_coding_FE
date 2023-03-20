@@ -128,3 +128,27 @@ button {
 .contentsDetail div:nth-child(1) {
   color: #737373;
 }
+
+.contentsGrid {
+  margin-top: 24px;
+}
+
+.contentsCard {
+  width: 290px;
+}
+
+.contentsCardImg {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.contentsCardImg img {
+  display: block;
+  width: 290px;
+  transition: all 0.5s;
+}
+
+.contentsCardImg img:hover {
+  transform: scale(1.1);
+}
