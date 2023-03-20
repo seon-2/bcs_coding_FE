@@ -12,8 +12,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 24px;
-  max-width: 1280px;
-  margin: auto;
+  @extend %maxWidth;
 }
 
 .logo {
@@ -97,8 +96,7 @@ button {
 }
 
 .contents {
-  max-width: 1280px;
-  margin: auto;
+  @extend %maxWidth;
   margin-top: 72px;
 }
 
@@ -257,8 +255,7 @@ button {
 }
 
 .introduce {
-  max-width: 1280px;
-  margin: auto;
+  @extend %maxWidth;
   margin-top: 72px;
 }
 
@@ -328,8 +325,7 @@ button {
 .sitemap {
   display: flex;
   justify-content: space-between;
-  max-width: 1280px;
-  margin: auto;
+  @extend %maxWidth;
   padding-top: 32px;
   border-top: 1px solid $border;
   margin-top: 120px;
@@ -363,8 +359,7 @@ button {
 }
 
 footer {
-  max-width: 1280px;
-  margin: auto;
+  @extend %maxWidth;
   font-size: 12px;
   color: $secondary;
   padding-bottom: 24px;
