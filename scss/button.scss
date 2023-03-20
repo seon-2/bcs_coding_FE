@@ -1,5 +1,4 @@
-@mixin btnStyle($color: darkgray) {
-  background-color: $color;
+%btnStyle {
   color: whitesmoke;
   border: 0;
   border-radius: 12px;

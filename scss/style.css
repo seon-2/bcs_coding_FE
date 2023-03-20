@@ -1,25 +1,20 @@
-.info {
-  background-color: darkgray;
+.success, .alert, .info {
   color: whitesmoke;
   border: 0;
   border-radius: 12px;
   padding: 12px;
+}
+
+.info {
+  background-color: lightgrey;
 }
 
 .alert {
-  background-color: darkRed;
-  color: whitesmoke;
-  border: 0;
-  border-radius: 12px;
-  padding: 12px;
+  background-color: lightcoral;
 }
 
 .success {
-  background-color: darkGreen;
-  color: whitesmoke;
-  border: 0;
-  border-radius: 12px;
-  padding: 12px;
+  background-color: lightgreen;
 }
 
 /*# sourceMappingURL=style.css.map */
