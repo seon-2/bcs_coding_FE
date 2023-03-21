@@ -4,6 +4,12 @@ body header {
   margin: auto;
 }
 
+body header .loginBox .login, body header .menu button {
+  background-color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
 body {
   margin: 0;
   color: #222222;
@@ -23,9 +29,6 @@ body header .menu button {
   border: 0px;
   padding-left: 16px;
   padding-right: 16px;
-  background-color: white;
-  font-size: 16px;
-  font-weight: 600;
 }
 body header .menu button:nth-child(2) {
   margin-left: 44px;
@@ -40,9 +43,6 @@ body header .loginBox .login {
   border-radius: 9999px;
   padding: 8px 16px;
   font-size: 14px;
-  background-color: white;
-  font-size: 16px;
-  font-weight: 600;
 }
 body header .loginBox .elipsis {
   width: 24px;
