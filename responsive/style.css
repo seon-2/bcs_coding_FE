@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  background-color: aquamarine;
+}
+@media (min-width: 768px) {
+  body {
+    background-color: blanchedalmond;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

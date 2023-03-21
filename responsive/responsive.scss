@@ -1,0 +1,12 @@
+$tablet: 768px;
+$laptop: 1024px;
+$pc: 1280px;
+
+@mixin responsive($device) {
+  @if $device == "tablet" {
+    @media (min-width: $tablet) {
+      // 스타일링
+      @content;
+    }
+  }
+}

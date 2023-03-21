@@ -1,0 +1,9 @@
+@import "responsive";
+
+body {
+  margin: 0;
+  background-color: aquamarine;
+  @include responsive("tablet") {
+    background-color: blanchedalmond;
+  }
+}
