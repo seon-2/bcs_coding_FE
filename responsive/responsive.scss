@@ -8,5 +8,15 @@ $pc: 1280px;
       // 스타일링
       @content;
     }
+  } @else if $device == "laptop" {
+    @media (min-width: $laptop) {
+      // 스타일링
+      @content;
+    }
+  } @else {
+    @media (min-width: $pc) {
+      // 스타일링
+      @content;
+    }
   }
 }
