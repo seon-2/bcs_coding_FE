@@ -33,6 +33,11 @@ body header .menu button {
 body header .menu:nth-child(2) {
   margin-left: 44px;
 }
+@media (min-width: 1024px) {
+  body header .menu {
+    display: inline-block;
+  }
+}
 body header .loginBox {
   display: flex;
   align-items: center;
@@ -44,22 +49,20 @@ body header .loginBox .login {
   padding: 8px 16px;
   font-size: 14px;
 }
-body header .loginBox .ellipsis {
-  width: 24px;
-  margin-left: 16px;
-}
-
 @media (min-width: 1024px) {
-  .menu button {
-    display: inline-block;
-  }
-  .login {
+  body header .loginBox .login {
     color: #737373;
     font-size: 16px;
     border: 0px;
     padding: 0px;
   }
-  .ellipsis {
+}
+body header .loginBox .ellipsis {
+  width: 24px;
+  margin-left: 16px;
+}
+@media (min-width: 1024px) {
+  body header .loginBox .ellipsis {
     display: none;
   }
 }
