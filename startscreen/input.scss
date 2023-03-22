@@ -1,11 +1,11 @@
 body {
   margin: 0;
   background-color: lightblue;
-  color: darkblue;
+  color: lightsalmon;
 }
 
 h1 {
-  background-color: aliceblue;
+  background-color: lightgoldenrodyellow;
 }
 
 .bgVideo {
@@ -23,4 +23,10 @@ main {
   //   background-color: lightsalmon; 영역 확인 용
   width: 100vw;
   height: 100vh;
+
+  // 화면 정 가운데로 글자 배치_flex
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

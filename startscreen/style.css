@@ -1,11 +1,11 @@
 body {
   margin: 0;
   background-color: lightblue;
-  color: darkblue;
+  color: lightsalmon;
 }
 
 h1 {
-  background-color: aliceblue;
+  background-color: lightgoldenrodyellow;
 }
 
 .bgVideo {
@@ -22,6 +22,10 @@ main {
   z-index: 2;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
