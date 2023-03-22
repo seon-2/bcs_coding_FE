@@ -16,3 +16,11 @@ h1 {
   height: 100vh;
   object-fit: cover;
 }
+
+main {
+  position: fixed;
+  z-index: 2;
+  //   background-color: lightsalmon; 영역 확인 용
+  width: 100vw;
+  height: 100vh;
+}
