@@ -57,6 +57,8 @@ function onClickAdd() {
 
 function onClickRegist() {
   const newQuotesInput = document.querySelector(".newQuotesInput");
+  const newQuotes = document.querySelector(".newQuotes");
+  const quotesMsg = document.querySelector(".quotesMsg");
 
   if (!newQuotesInput.value) {
     return;
@@ -67,4 +69,8 @@ function onClickRegist() {
   quotesArr.push(newQuotesInput.value);
   // console.log(newQuotesInput.value);
   localStorage.setItem("quotes", JSON.stringify(quotesArr));
+
+  quotesMsg.innerHTML = `<span style="color: red">${newQuotesInput.value}</span>`;
+  newQuotes.style.display = "none";
+  newQuotesInput.value = "";
 }
