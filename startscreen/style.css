@@ -27,5 +27,16 @@ main {
   justify-content: center;
   align-items: center;
 }
+main .quotes {
+  position: relative;
+}
+main .quotes .quotesAddBtn {
+  display: none;
+  position: absolute;
+  top: 20px;
+}
+main .quotes:hover .quotesAddBtn {
+  display: inline-block;
+}
 
 /*# sourceMappingURL=style.css.map */

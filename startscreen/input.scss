@@ -29,4 +29,21 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .quotes {
+    position: relative;
+    .quotesAddBtn {
+      display: none;
+      position: absolute;
+      top: 20px;
+      // right: 50%;
+      // translate: (50%, -50%);
+    }
+
+    &:hover {
+      .quotesAddBtn {
+        display: inline-block;
+      }
+    }
+  }
 }
