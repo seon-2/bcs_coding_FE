@@ -45,6 +45,6 @@ function getQuotes() {
   }
   let quotesArr = JSON.parse(savedQuotes);
 
-  quotesMsg.innerText = quotesArr[0];
+  quotesMsg.innerText = quotesArr[Math.floor(Math.random() * quotesArr.length)];
 }
 getQuotes();
