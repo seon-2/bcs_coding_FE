@@ -49,3 +49,22 @@ function getQuotes() {
 }
 
 setInterval(getQuotes, 10000);
+
+function onClickAdd() {
+  const newQuotes = document.querySelector(".newQuotes");
+  newQuotes.style.display = "inline-block";
+}
+
+function onClickRegist() {
+  const newQuotesInput = document.querySelector(".newQuotesInput");
+
+  if (!newQuotesInput.value) {
+    return;
+  }
+
+  let savedQuotes = localStorage.getItem("quotes");
+  let quotesArr = JSON.parse(savedQuotes);
+  quotesArr.push(newQuotesInput.value);
+  // console.log(newQuotesInput.value);
+  localStorage.setItem("quotes", JSON.stringify(quotesArr));
+}
