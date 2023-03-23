@@ -31,3 +31,20 @@ function getTime() {
 // 1초 마다 실행할 수 있도록
 // setInterval(실행할 함수, 얼만큼 반복) 1000 = 1초
 setInterval(getTime, 1000);
+
+function getQuotes() {
+  const quotesMsg = document.querySelector(".quotesMsg");
+  let savedQuotes = localStorage.getItem("quotes");
+
+  if (!savedQuotes) {
+    localStorage.setItem(
+      "quotes",
+      JSON.stringify(["스스로 돌아보자", "하다보면 된다", ";)", "성실"])
+    );
+    savedQuotes = localStorage.getItem("quotes");
+  }
+  let quotesArr = JSON.parse(savedQuotes);
+
+  quotesMsg.innerText = quotesArr[0];
+}
+getQuotes();
