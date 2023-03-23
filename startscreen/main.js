@@ -47,4 +47,5 @@ function getQuotes() {
 
   quotesMsg.innerText = quotesArr[Math.floor(Math.random() * quotesArr.length)];
 }
-getQuotes();
+
+setInterval(getQuotes, 10000);
