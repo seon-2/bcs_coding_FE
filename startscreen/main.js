@@ -80,13 +80,20 @@ let isLoading = false;
 async function onClickSearch() {
   const searchInput = document.querySelector(".searchInput");
   const searchResult = document.querySelector(".searchResult");
-
-  if (!searchInput.value) return; // 빈 칸 입력 예외 처리
-  if (!isLoading) return; // chatGPT 연속 요청 방지
+  console.log("if문 전에");
+  if (!searchInput.value) {
+    return;
+  } // 빈 칸 입력 예외 처리
+  if (isLoading) {
+    console.log("if문 안에");
+    return;
+  } // chatGPT 연속 요청 방지
 
   // if 문을 통과했다면 isLoading === false
+  console.log("if문 통과!");
 
   isLoading = true;
+
   const question = searchInput.value;
   // 검색 중
   searchInput.value = "검색 중 입니다. 잠시만 기다려주세요 :)";
@@ -119,11 +126,11 @@ async function onClickSearch() {
   isLoading = false;
 }
 
-function onClickToggle(value) {
+function onClickToggle(i) {
   const nft = document.querySelector(".nft");
   const nftView = document.querySelector(".nftView");
 
-  if (value) {
+  if (i) {
     nft.style.display = "inline-block";
     nftView.style.display = "none";
   } else {
