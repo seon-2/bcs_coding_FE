@@ -66,5 +66,9 @@ main {
 
       animation: spin 10s linear infinite;
     }
+
+    .searchResult {
+      display: none;
+    }
   }
 }

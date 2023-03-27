@@ -77,6 +77,8 @@ function onClickRegist() {
 
 async function onClickSearch() {
   const searchInput = document.querySelector(".searchInput");
+  const searchResult = document.querySelector(".searchResult");
+
   if (!searchInput.value) return; // 빈 칸 입력 예외 처리
 
   const question = searchInput.value;
@@ -88,17 +90,24 @@ async function onClickSearch() {
     "https://holy-fire-2749.fly.dev/chat",
     {
       // body
-      question: question,
+      question,
     },
     {
       // header
       headers: {
         // 대소문자 맞아야 함
         "Content-type": "application/json",
-        Authorization: "Bearer BLOCK_CHAIN_SCHOOL_3rd",
+        Authorization: "Bearer BLOCKCHAINSCHOOL3",
       },
     }
   );
 
-  console.log(response);
+  // 응답 정상
+  if (response.status === 200) {
+    searchResult.style.display = "inline";
+    searchResult.innerText = response.data.choices[0].message.content;
+  }
+
+  // 검색창 비우기
+  searchInput.value = "";
 }

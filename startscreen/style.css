@@ -54,5 +54,8 @@ main .search .searchLogo {
   height: 32px;
   animation: spin 10s linear infinite;
 }
+main .search .searchResult {
+  display: none;
+}
 
 /*# sourceMappingURL=style.css.map */
