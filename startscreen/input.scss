@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background-color: lightblue;
-  color: lightsalmon;
+  color: lightgoldenrodyellow;
 }
 
 h1 {
@@ -44,6 +44,16 @@ main {
       .quotesAddBtn {
         display: inline-block;
       }
+    }
+  }
+  .newQuotes {
+    display: none;
+  }
+
+  .search {
+    .searchLogo {
+      width: 32px;
+      height: 32px;
     }
   }
 }
