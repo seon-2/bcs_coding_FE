@@ -85,3 +85,5 @@ function onClickSearch() {
 
   console.log(searchInput.value);
 }
+
+console.log(axios);
