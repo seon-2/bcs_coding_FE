@@ -75,7 +75,7 @@ function onClickRegist() {
   newQuotesInput.value = "";
 }
 
-function onClickSearch() {
+async function onClickSearch() {
   const searchInput = document.querySelector(".searchInput");
   if (!searchInput.value) return; // 빈 칸 입력 예외 처리
 
@@ -83,7 +83,22 @@ function onClickSearch() {
   // 검색 중
   searchInput.value = "검색 중 입니다. 잠시만 기다려주세요 :)";
 
-  console.log(searchInput.value);
-}
+  // FE에서 BE로 보내는 코드. 요청 보내기까지 시간이 걸림. 기다리는 시간 필요 (async, await)
+  const response = await axios.post(
+    "https://holy-fire-2749.fly.dev/chat",
+    {
+      // body
+      question: question,
+    },
+    {
+      // header
+      headers: {
+        // 대소문자 맞아야 함
+        "Content-type": "application/json",
+        Authorization: "Bearer BLOCK_CHAIN_SCHOOL_3rd",
+      },
+    }
+  );
 
-console.log(axios);
+  console.log(response);
+}
