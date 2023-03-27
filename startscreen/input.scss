@@ -71,4 +71,40 @@ main {
       display: none;
     }
   }
+
+  .nft {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 24px;
+
+    img {
+      width: 150px;
+      height: 150px;
+    }
+
+    .nftHover {
+      position: absolute;
+      display: none; // 처음에는 꺼졌다가 hover 하면 보이게
+      width: 150px;
+      height: 150px;
+      top: 0;
+      left: 0;
+      background-color: rgb(0, 0, 0, 0.5);
+
+      a {
+      }
+
+      button {
+      }
+    }
+
+    &:hover {
+      .nftHover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
 }

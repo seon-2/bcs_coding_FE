@@ -57,5 +57,29 @@ main .search .searchLogo {
 main .search .searchResult {
   display: none;
 }
+main .nft {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 24px;
+}
+main .nft img {
+  width: 150px;
+  height: 150px;
+}
+main .nft .nftHover {
+  position: absolute;
+  display: none;
+  width: 150px;
+  height: 150px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main .nft:hover .nftHover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /*# sourceMappingURL=style.css.map */
