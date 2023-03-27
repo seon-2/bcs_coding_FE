@@ -93,5 +93,12 @@ main .nft:hover .nftHover {
   justify-content: center;
   align-items: center;
 }
+main .nftView {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 24px;
+  display: none;
+}
 
 /*# sourceMappingURL=style.css.map */

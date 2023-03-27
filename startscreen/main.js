@@ -83,7 +83,7 @@ async function onClickSearch() {
 
   if (!searchInput.value) return; // 빈 칸 입력 예외 처리
   if (!isLoading) return; // chatGPT 연속 요청 방지
-  
+
   // if 문을 통과했다면 isLoading === false
 
   isLoading = true;
@@ -117,4 +117,17 @@ async function onClickSearch() {
   // 검색창 비우기
   searchInput.value = "";
   isLoading = false;
+}
+
+function onClickToggle(value) {
+  const nft = document.querySelector(".nft");
+  const nftView = document.querySelector(".nftView");
+
+  if (value) {
+    nft.style.display = "inline-block";
+    nftView.style.display = "none";
+  } else {
+    nft.style.display = "none";
+    nftView.style.display = "inline-block";
+  }
 }
