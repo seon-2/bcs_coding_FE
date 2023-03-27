@@ -76,6 +76,18 @@ main .nft .nftHover {
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
+main .nft .nftHover a {
+  color: white;
+}
+main .nft .nftHover button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: -8px;
+  border-radius: 999px;
+  width: 24px;
+  height: 24px;
+}
 main .nft:hover .nftHover {
   display: flex;
   justify-content: center;

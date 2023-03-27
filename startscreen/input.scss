@@ -93,9 +93,17 @@ main {
       background-color: rgb(0, 0, 0, 0.5);
 
       a {
+        color: white;
       }
 
       button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: -8px;
+        border-radius: 999px;
+        width: 24px;
+        height: 24px;
       }
     }
 
