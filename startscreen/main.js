@@ -74,3 +74,14 @@ function onClickRegist() {
   newQuotes.style.display = "none";
   newQuotesInput.value = "";
 }
+
+function onClickSearch() {
+  const searchInput = document.querySelector(".searchInput");
+  if (!searchInput.value) return; // 빈 칸 입력 예외 처리
+
+  const question = searchInput.value;
+  // 검색 중
+  searchInput.value = "검색 중 입니다. 잠시만 기다려주세요 :)";
+
+  console.log(searchInput.value);
+}
