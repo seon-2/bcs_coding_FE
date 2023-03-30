@@ -14,6 +14,7 @@ navigator.geolocation.getCurrentPosition(
       .then((data) => {
         weatherTemp.innerText =
           data.name + ", " + parseInt(data.main.temp) + "℃";
+        weatherIcon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
       });
   },
   () => {
